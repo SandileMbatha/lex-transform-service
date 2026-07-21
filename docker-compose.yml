@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  lex-transform:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./output:/data/output          # persist artifacts on host
+      - ./sample-data:/data/input:ro   # read-only sample inputs
+    environment:
+      APP_OUTPUT_DIR: /data/output
+      APP_CONCURRENCY_POOL_SIZE: 4
+      APP_CONCURRENCY_QUEUE_CAPACITY: 100
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8080/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 15s

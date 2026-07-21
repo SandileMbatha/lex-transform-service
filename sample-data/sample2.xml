@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<judgment xmlns="urn:lex:content:1">
+    <header>
+        <content_id>FR-2024-TGI-000456</content_id>
+        <title>Tribunal judiciaire de Lyon, 5 juin 2024, n° 23/04567</title>
+        <court>Tribunal judiciaire de Lyon</court>
+        <jurisdiction>FR</jurisdiction>
+        <decision_date>2024-06-05</decision_date>
+        <citations>
+            <citation type="ECLI">ECLI:FR:TJLYON98765</citation>
+        </citations>
+        <parties>
+            <party role="plaintiff">Mme Martin</party>
+            <party role="defendant">Entreprise XYZ SARL</party>
+        </parties>
+    </header>
+    <body>
+        <section type="facts">
+            <p id="p1">Le présent litige concerne un accident du travail survenu le 3 mars 2023 dans les locaux de l'Entreprise XYZ SARL.</p>
+            <p id="p2">Mme Martin, employée depuis 2018, a subi des blessures lors de l'utilisation d'équipements défectueux.</p>
+        </section>
+        <section type="reasons">
+            <p id="p3">Considérant que l'employeur est tenu d'assurer la sécurité et de protéger la santé physique et mentale des travailleurs.</p>
+            <p id="p4">Attendu que l'Entreprise XYZ SARL n'a pas procédé à la vérification réglementaire des équipements de travail.</p>
+            <p id="p5">Considérant que le lien de causalité entre le manquement de l'employeur et le préjudice subi est établi.</p>
+        </section>
+        <section type="disposition">
+            <p id="p6">Par ces motifs, le tribunal condamne l'Entreprise XYZ SARL à réparer l'intégralité du préjudice causé à Mme Martin.</p>
+        </section>
+    </body>
+</judgment>

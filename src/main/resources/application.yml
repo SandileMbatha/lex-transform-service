@@ -1,0 +1,37 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: lex-transform-service
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 500MB
+
+# Application-specific configuration — all values overridable via environment variables
+app:
+  output-dir: ${APP_OUTPUT_DIR:./output}
+  concurrency:
+    pool-size: ${APP_CONCURRENCY_POOL_SIZE:4}
+    queue-capacity: ${APP_CONCURRENCY_QUEUE_CAPACITY:100}
+  xslt:
+    path: ${APP_XSLT_PATH:classpath:xslt/judgment-to-json.xslt}
+  schema:
+    path: ${APP_SCHEMA_PATH:classpath:schemas/judgment.xsd}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+logging:
+  level:
+    com.lexisnexis.transform: INFO

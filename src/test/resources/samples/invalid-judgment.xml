@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Missing required 'court' and 'jurisdiction' elements; decision_date is not a valid xs:date -->
+<judgment xmlns="urn:lex:content:1">
+    <header>
+        <content_id>FR-2024-INVALID-001</content_id>
+        <title>Arrêt invalide</title>
+        <decision_date>not-a-date</decision_date>
+    </header>
+    <body>
+        <section type="facts">
+            <p id="p1">Some text.</p>
+        </section>
+    </body>
+</judgment>

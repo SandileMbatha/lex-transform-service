@@ -1,0 +1,10 @@
+target/
+output/
+*.class
+*.jar
+*.log
+.DS_Store
+.idea/
+*.iml
+settings-local.xml
+.claude-flow/
