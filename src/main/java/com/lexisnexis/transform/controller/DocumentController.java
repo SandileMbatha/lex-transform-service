@@ -47,8 +47,6 @@ public class DocumentController {
     private final DocumentOrchestratorService documentOrchestratorService;
     private final DocumentPublishingService documentPublishingService;
 
-    // ── Task 1: Single document submission ────────────────────────────────────
-
     /**
      * Accepts one XML legal judgment and queues it for asynchronous processing.
      *
